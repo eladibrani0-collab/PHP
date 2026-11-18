@@ -1,15 +1,3 @@
-<?php
-include_once('connnection.php');
-
-
-if(isset($_POST['username'],$_POST['password'])){
-    $username=$_POST['username'];
-    $password=$_POST['password'];
-}
-
-
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,14 +8,14 @@ if(isset($_POST['username'],$_POST['password'])){
 </head>
 <body>
 
-<form method="post">
+<form method="post" action="add.php">
 
     <label for="username">Username:</label>
     <input type="text" id="username" name="username">
     <label for="password">Password:</label>
-    <input type="password" id="Password" name="Password">
+    <input type="password" id="password" name="password">
 
-    <input type="submit" value="submit">
+    <input type="submit" name="submit" value="submit">
 
 
 </form>
