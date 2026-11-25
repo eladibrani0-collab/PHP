@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
 
 <a href="dashboard.php">Dashboard</a>
 
-<form method="post" action="add.php">
+<form method="post" action="index.php">
 
     <label for="username">Username:</label>
     <input type="text" id="username" name="username">
